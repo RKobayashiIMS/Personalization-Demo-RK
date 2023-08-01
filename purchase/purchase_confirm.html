@@ -12,6 +12,12 @@
   <script>
     header("../");
   </script>
+  <input type="hidden" class="item-id" id="item-a">
+  <input type="hidden" id="item-a-price" value="9999">
+  <input type="hidden" id="item-a-quantity" value="1">
+  <input type="hidden" class="item-id" id="item-b">
+  <input type="hidden" id="item-b-price" value="8000">
+  <input type="hidden" id="item-b-quantity" value="1">  
   <div class="container">
     <div class="main-text">
       <h1>Personalization 検証用サイト 購入確認</h1>
@@ -48,11 +54,11 @@
       </div>
     </div>
         <div align="center">
-         <button style="width: 160px; height: 40px; "><a href="/purchase/purchase_complete.html">購入する</a></button> 
+         <button class="purchase" style="width: 160px; height: 40px; "><a href="/purchase/purchase_complete.html">購入する</a></button> 
         </div>   
   </div>
   </div>
-  </div>
+  </div> 
   <footer>
     <div class="footer"> </div>
   </footer>
