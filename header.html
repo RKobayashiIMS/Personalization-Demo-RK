@@ -6,6 +6,7 @@
   <title>Personalization Demo Site</title>
   <!-- <link rel="stylesheet" type="text/css" href="stylesheet.css"> -->
   <script>
+    const ua = window.navigator.userAgent.toLowerCase();
     if (ua.indexOf('edge') !== -1 || ua.indexOf('edg') !== -1) {
       document.cookie = "anonymousId=custom-anon-user-201";
     } else if (ua.indexOf('chrome') !== -1) {
