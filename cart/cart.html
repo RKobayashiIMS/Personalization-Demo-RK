@@ -11,7 +11,22 @@
 <body>
   <script>
     header("../");
-    runSendEvent();
+    document.addEventListener("DOMContentLoaded", function()
+    {
+        SalesforceInteractions.sendEvent({
+            interaction: {
+                name: SalesforceInteractions.CartInteractionName.ReplaceCart,
+                lineItems: [
+                  {
+                    catalogObjectType: "Product",
+                    catalogObjectId: "1_1_TEST11_99",
+                    price: 3681.0,
+                    quantity: 1
+                  }
+                ]
+            }
+        });
+    });
   </script>
   <div class="container">
     <div class="main-text">
